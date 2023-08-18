@@ -1,12 +1,12 @@
 .generator{
-    /* overflow: hidden; */
-    height: 215px;
-    transition: height 0.3s;
+    overflow: hidden;
+    /* height: 215px; */
+    /* transition: height 0.3s; */
 }
 
-.generator.active{
-    height: 545px;
-}
+/* .generator.active{ */
+    /* height: 545px; */
+/* } */
 
 .generator h1{
     font-size: 21px;
