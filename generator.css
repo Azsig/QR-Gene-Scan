@@ -1,5 +1,5 @@
 .generator{
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 215px;
     transition: height 0.3s;
 }
