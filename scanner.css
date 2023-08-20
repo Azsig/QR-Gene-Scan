@@ -86,3 +86,13 @@
     letter-spacing: 1px;
     border-radius: 5px;
 }
+
+
+.scanner-form.active-img img{
+    display: block;
+}
+
+.scanner-form.active-img .content,
+.scanner-form.active-img video{
+    display: none;
+}

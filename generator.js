@@ -33,3 +33,4 @@ function download(tempFIle, file_name, extension){
     a.click();
     a.remove();
 }
+
