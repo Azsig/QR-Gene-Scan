@@ -4,8 +4,23 @@
 const generatorDiv = document.querySelector('.generator');
 const qrInput = generatorDiv.querySelector('.generator-form input');
 const downloadBtn = generatorDiv.querySelector('.generator-btn .gene-link');
-const img = generatorDiv.querySelector('.img img');
 
+
+let qrImage = new QRCode(document.querySelector('.img'))
+
+function makeCode(){
+    let qrValue = document.querySelector('.generator-form input').value;
+    if(!qrValue.trim()) return;
+
+    qrImage.makeCode(qrValue);
+    document.querySelector('.generator').classList.add('active');
+}
+
+const generateBtn = document.querySelector(".generator-form button")
+
+generateBtn.addEventListener('click', makeCode)
+
+const img = generatorDiv.querySelector('.img img');
 
 downloadBtn.addEventListener('click', () => {
     imgURL = img.src;
