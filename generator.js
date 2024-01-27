@@ -40,13 +40,11 @@ generateBtn.addEventListener('click', makeCode)
 
 
 function fetchImage(url){
-    fetch(url).then(res => res.blob()).then(file => {
-        let tempFIle = URL.createObjectURL(file);
+   
+        let tempFIle = url;
         let file_name = 'QR Code';
         let extension = 'png';
         download(tempFIle, file_name, extension)
-    })
-    .catch(() => imgURL = '')
 }
 
 function download(tempFIle, file_name, extension){
